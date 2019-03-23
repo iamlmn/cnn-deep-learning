@@ -1,4 +1,4 @@
-# Deep-learning-CNNs
+# Deep-learning with CNNs
 
 
 My Collection of common deep learning projects and notes I have done over time!
