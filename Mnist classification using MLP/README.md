@@ -5,8 +5,9 @@ Basic MLP on mnist image dataset for classifying digits.
 
 ##### Model summary: 
 
-| Layer (type)           |      Output Shape     |      Param #   |
-| ----------------------- :---------------------: ---------------: |
+
+| Layer (type)           |      Output Shape     |      Param #    |
+| -----------------------|:---------------------:| ---------------:|
 | flatten_3 (Flatten)    |      (None, 784)      |      0          |
 | dense_2 (Dense)        |      (None, 512)      |      401920     |
 | dropout_1 (Dropout)    |      (None, 512)      |      0          |
