@@ -1,5 +1,4 @@
 # Deep-learning
-![alt text](https://github.com/iamlmn/deep-learning/blob/master/keras-tensorflow-logo.jpg "TF Logo")
 
 
 My Collection of common deep learning projects and notes I have done over time!
