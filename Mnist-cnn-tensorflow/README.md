@@ -4,7 +4,7 @@
 ##### Inferences 
 > CNN worked better clearly.
 
-###### [Mnist-Tflearn](https://github.com/iamlmn/deep-learning/edit/master/Mnist-cnn-tensorflow/Mnist-Tflearn.ipynb) : Implementation of Mnist classification cnn using Tflearn.
+###### [Mnist-Tflearn](https://github.com/iamlmn/deep-learning/blob/master/Mnist-cnn-tensorflow/Mnist-Tflearn.ipynb) : Implementation of Mnist classification cnn using Tflearn.
 ##### Inferences
 > Number of lines in code got reduced to 50% .
 
