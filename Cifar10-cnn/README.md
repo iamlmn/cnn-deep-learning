@@ -1,24 +1,5 @@
-# deep-learning
-Basic MLP on mnist image dataset for classifying digits.
+# CIFAR10 data classification using keras (CNN)
 
-Test accuracy -97.64 after training for 10 Epochs with dropout 0.2.
+Accuracy need to be improved.
 
-Model summary: 
-
-Layer (type)                 Output Shape              Param #   
-=================================================================
-flatten_3 (Flatten)          (None, 784)               0         
-_________________________________________________________________
-dense_2 (Dense)              (None, 512)               401920    
-_________________________________________________________________
-dropout_1 (Dropout)          (None, 512)               0         
-_________________________________________________________________
-dense_3 (Dense)              (None, 512)               262656    
-_________________________________________________________________
-dropout_2 (Dropout)          (None, 512)               0         
-_________________________________________________________________
-dense_4 (Dense)              (None, 10)                5130      
-=================================================================
-Total params: 669,706
-Trainable params: 669,706
-Non-trainable params: 0
+Data Augmentation improves accuracy.
