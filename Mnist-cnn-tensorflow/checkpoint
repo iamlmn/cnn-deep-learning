@@ -1,0 +1,2 @@
+model_checkpoint_path: "F:\\Deeplearning\\deep-learning\\Mnist-cnn-tensorflow\\tflearn.model"
+all_model_checkpoint_paths: "F:\\Deeplearning\\deep-learning\\Mnist-cnn-tensorflow\\tflearn.model"
