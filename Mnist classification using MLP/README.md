@@ -1,4 +1,4 @@
-# Mnist classification
+# Mnist classification using keras
 Basic MLP on mnist image dataset for classifying digits.
 
 > Test accuracy -97.64 after training for 10 Epochs with dropout 0.2.
