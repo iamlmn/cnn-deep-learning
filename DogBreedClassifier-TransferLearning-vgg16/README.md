@@ -12,17 +12,18 @@ pip install -r requirements/requirements.txt`
 > Download human face data from [here]https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip)
 
 ### PreTrained weights 
-> Weight botteneck weight from [VGG16](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
+> Weight botteneck weight (npz format) .
+1 [VGG16](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-[VGG19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
+2 [VGG19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-[ResNet50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) 
+3 [ResNet50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) 
 
-[Inception] (https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) 
+4 [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) 
 
-[Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) (npz format)
+5 [Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) 
 
-Using pretrained weigths sample code
+### Using pretrained weigths sample code
 
 `bottleneck_features = np.load('bottleneck_features/DogResnet50Data.npz')
 
@@ -33,8 +34,6 @@ valid_resnet = bottleneck_features['valid']
 test_resnet = bottleneck_features['test']
 
 resnet_model = Sequential()
-
-#resnet_model.add(Flatten())
 
 resnet_model.add(Flatten(input_shape=train_resnet.shape[1:]))
 
