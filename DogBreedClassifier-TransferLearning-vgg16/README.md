@@ -1,11 +1,14 @@
-# Transfer learning basic
+# Bog breed classifier using transfer learning
+
 The code is to detect the dog breed if dog picture is fed , human face detector using Harcascade is used to detect human faces and gives resemblance to which breed the human face looks similar to else says no human face or dog detected .
 
 Model gave a good accracy with Resnet 50  pretrained weights!
 
-Install requiremnets first `conda create --name dog-project python=3.5
+Install requiremnets first. 
+```conda create --name dog-project python=3.5
 activate dog-project
-pip install -r requirements/requirements.txt`
+pip install -r requirements/requirements.txt
+```
 
 > Download dog data from [here](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip)
 ---
@@ -86,4 +89,4 @@ print('Test accuracy: %.4f%%' % test_accuracy)
   * Read image
   * Gray Scale & detect
   
-  
+  [Link to harcasecade xmls](https://github.com/opencv/opencv/tree/master/data/haarcascades)
