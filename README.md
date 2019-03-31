@@ -1,4 +1,4 @@
-# Deep-learning with CNNs
+# Convolutional Neural Network (CNN) — Deep Learning
 
 
 Collection of common CNN projects and notes I have done/taken over time!
