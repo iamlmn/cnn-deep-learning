@@ -25,7 +25,7 @@ pip install -r requirements/requirements.txt`
 
 ### Using pretrained weigths sample code
 
-`bottleneck_features = np.load('bottleneck_features/DogResnet50Data.npz')
+```bottleneck_features = np.load('bottleneck_features/DogResnet50Data.npz')
 
 train_resnet = bottleneck_features['train']
 
@@ -64,7 +64,7 @@ resnet_predictions = [np.argmax(resnet_model.predict(np.expand_dims(feature, axi
 
 test_accuracy = 100*np.sum(np.array(resnet_predictions)==np.argmax(test_targets, axis=1))/len(resnet_predictions)
 
-print('Test accuracy: %.4f%%' % test_accuracy)`
+print('Test accuracy: %.4f%%' % test_accuracy)```
 
 
 * Load bottle neck weights
@@ -73,7 +73,7 @@ print('Test accuracy: %.4f%%' % test_accuracy)`
 
 
 ### To predict:
-`bottleneck_feature = extract_Resnet50(path_to_tensor(img_path))
+```bottleneck_feature = extract_Resnet50(path_to_tensor(img_path))
    
     #Load the best model
     
@@ -85,18 +85,18 @@ print('Test accuracy: %.4f%%' % test_accuracy)`
     
     # return dog breed that is predicted by the model
     
-    output=dog_names[np.argmax(predicted_vector)]`
+    output=dog_names[np.argmax(predicted_vector)]```
     
  ###### keras 2.20.0 has got different dimensions   
     
  Using HaarCascade :
- `face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt.xml')
+ ```face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt.xml')
  
   img = cv2.imread(human_files[2])
   
   gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
   
-  faces = face_cascade.detectMultiScale(gray)`
+  faces = face_cascade.detectMultiScale(gray)```
   
   Steps involved :
   * Load CascadeClassifier with xml
