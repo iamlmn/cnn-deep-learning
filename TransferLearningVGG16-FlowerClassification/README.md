@@ -7,7 +7,7 @@ Please download the respective .npy from [VGG16 NPY](https://mega.nz/#!YU1FWJrA!
 Image input size = 224 x 224 x 3
 
 
-![alt text](https://github.com/iamlmn/deep-learning/blob/master/keras-tensorflow-logo.jpg "TF Logo")
+
 
 
 
