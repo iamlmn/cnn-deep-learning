@@ -5,7 +5,8 @@ The code is to detect the dog breed if dog picture is fed , human face detector 
 Model gave a good accracy with Resnet 50  pretrained weights!
 
 Install requiremnets first. 
-```conda create --name dog-project python=3.5
+
+``` conda create --name dog-project python=3.5
 activate dog-project
 pip install -r requirements/requirements.txt
 ```
@@ -14,18 +15,17 @@ pip install -r requirements/requirements.txt
 ---
 > Download human face data from [here]https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip)
 
-### PreTrained weights 
-> Weight botteneck weight (npz format) .
+### PreTrained weights ( botteneck weight in npz format)
 
-> 1 [VGG16](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
+> 1. [VGG16](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-> 2 [VGG19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
+> 2. [VGG19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-> 3 [ResNet50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) 
+> 3. [ResNet50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) 
 
-> 4 [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) 
+> 4. [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) 
 
-> 5 [Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) 
+> 5. [Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) 
 
 ### Using pretrained weigths sample code
 
