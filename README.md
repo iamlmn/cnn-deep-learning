@@ -1,7 +1,7 @@
 # Deep-learning with CNNs
 
 
-Collection of common deep learning projects and notes I have done/taken over time!
+Collection of common CNN projects and notes I have done/taken over time!
 
 To test, run `pip3 install -r requirements.txt` to install all the dependencies.
 
