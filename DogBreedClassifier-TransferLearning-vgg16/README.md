@@ -13,15 +13,16 @@ pip install -r requirements/requirements.txt`
 
 ### PreTrained weights 
 > Weight botteneck weight (npz format) .
-1 [VGG16](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-2 [VGG19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
+> 1 [VGG16](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-3 [ResNet50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) 
+> 2 [VGG19](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogVGG16Data.npz) 
 
-4 [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) 
+> 3 [ResNet50](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogResnet50Data.npz) 
 
-5 [Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) 
+> 4 [Inception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogInceptionV3Data.npz) 
+
+> 5 [Xception](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/DogXceptionData.npz) 
 
 ### Using pretrained weigths sample code
 
@@ -52,7 +53,8 @@ resnet_model.load_weights('saved_models/weights.best.resnet.hdf5')
 resnet_predictions = [np.argmax(resnet_model.predict(np.expand_dims(feature, axis=0))) for feature in test_resnet]
 test_accuracy = 100*np.sum(np.array(resnet_predictions)==np.argmax(test_targets, axis=1))/len(resnet_predictions)
 
-print('Test accuracy: %.4f%%' % test_accuracy)```
+print('Test accuracy: %.4f%%' % test_accuracy)
+```
 
 #### Steps :
 * Load bottle neck weights
@@ -67,7 +69,8 @@ print('Test accuracy: %.4f%%' % test_accuracy)```
      # obtain predicted vector     
     predicted_vector = resnet_model.predict(bottleneck_feature)    
     # return dog breed that is predicted by the model    
-    output=dog_names[np.argmax(predicted_vector)]```
+    output=dog_names[np.argmax(predicted_vector)]
+   ```
     
  ###### keras 2.20.0 has got different dimensions   
     
@@ -75,7 +78,8 @@ print('Test accuracy: %.4f%%' % test_accuracy)```
  ```face_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt.xml') 
   img = cv2.imread(human_files[2])  
   gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  
-  faces = face_cascade.detectMultiScale(gray)```
+  faces = face_cascade.detectMultiScale(gray)
+  ```
   
  ### Steps involved :
   * Load CascadeClassifier with xml
